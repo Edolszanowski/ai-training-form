@@ -77,8 +77,8 @@
             padding: 12px 16px;
             border: 2px solid #8b4513;
             border-radius: 8px;
-            background: rgba(139, 69, 19, 0.1);
-            color: #f4f1e8;
+            background: rgba(244, 241, 232, 0.95);
+            color: #1a251b;
             font-size: 16px;
             transition: all 0.3s ease;
         }
@@ -86,11 +86,25 @@
         input:focus, select:focus {
             outline: none;
             border-color: #daa520;
-            background: rgba(218, 165, 32, 0.1);
+            background: rgba(244, 241, 232, 1);
+            color: #1a251b;
+        }
+        
+        select option {
+            background: #f4f1e8;
+            color: #1a251b;
+            padding: 8px;
+        }
+        
+        /* Fix for dropdown hover visibility */
+        select:hover {
+            background: rgba(244, 241, 232, 1);
+            color: #1a251b;
         }
         
         input::placeholder {
-            color: #c9b037;
+            color: #8b4513;
+            opacity: 0.8;
         }
         
         .session-info {
@@ -251,6 +265,7 @@
                     <option value="">Choose your session</option>
                     <option value="Beginner">Beginner (1:00 PM - 2:00 PM)</option>
                     <option value="Advanced">Advanced (2:00 PM - 3:00 PM)</option>
+                    <option value="Both">Both Sessions (1:00 PM - 3:00 PM)</option>
                 </select>
             </div>
             
